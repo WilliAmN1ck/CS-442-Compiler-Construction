@@ -1,0 +1,39 @@
+putting in string lit in table and text is "> "
+in putString method with strlit being L1
+putting in string lit in table and text is "x = "
+in putString method with strlit being L2
+putting in string lit in table and text is "\n"
+in putString method with strlit being L3
+label for condResult in condition ble func is: L4
+label for while is: L5
+putting in string lit in table and text is "factorial = "
+in putString method with strlit being L6
+putting in string lit in table and text is "\n"
+in putString method with strlit being L3
+     1: /* Input a number and calculate its factorial.
+[0m     2: */
+[0m     3: 
+[0m     4: x, fac : int
+[0m     5: 
+[0m     6: main :: {
+[0m     7:   put("> ")
+[0m     8:   x = get(int)
+[0m     9:   put("x = ")
+[0m    10:   put(x)
+[0m    11:   put("\n")
+[0m    12:   fac = 1
+[0m    13:   while x > 0 {
+[0m    14:     fac = fac * x
+[0m    15:     x = x - 1
+[0m    16:   }
+[0m    17:   put("factorial = ")
+[0m    18:   put(fac)
+[0m    19:   put("\n")
+[0m    20: }
+[0m
+Symbol Table: global
+Num Scope                Name           Ref            Type
+  0 global               x              _x             int          0
+  1 global               main           _main          () -> void
+  2 global               fac            _fac           int          0
+Parse Successful

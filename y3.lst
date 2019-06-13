@@ -1,0 +1,46 @@
+In LOAD CHAR AND TEXT IS: '>'
+In LOAD CHAR AND TEXT IS: '>'
+In LOAD CHAR AND TEXT IS: 'x'
+In LOAD CHAR AND TEXT IS: '='
+In LOAD CHAR AND TEXT IS: '\n'
+In LOAD CHAR AND TEXT IS: 'y'
+In LOAD CHAR AND TEXT IS: '='
+In LOAD CHAR AND TEXT IS: '\n'
+label for condResult in condition beq func is: L1
+label for condResult in condition bge func is: L2
+label for if else is: L3
+label for while is: L4
+In LOAD CHAR AND TEXT IS: 'g'
+In LOAD CHAR AND TEXT IS: '='
+In LOAD CHAR AND TEXT IS: '\n'
+     1: /* Input two numbers and calculate GCD
+[0m     2: */
+[0m     3: 
+[0m     4: x, y : int
+[0m     5: 
+[0m     6: main :: {
+[0m     7:   put('>')
+[0m     8:   x = get(int)
+[0m     9:   put('>')
+[0m    10:   y = get(int)
+[0m    11:   put('x') put('=') put(x) put('\n')
+[0m    12:   put('y') put('=') put(y) put('\n')
+[0m    13: 
+[0m    14:   while x ## y {
+[0m    15:     if x < y {
+[0m    16:       y = y - x
+[0m    17:     }
+[0m    18:     else {
+[0m    19:       x = x - y
+[0m    20:     }
+[0m    21:   }
+[0m    22: 
+[0m    23:   put('g') put('=') put(x) put('\n')
+[0m    24: }
+[0m
+Symbol Table: global
+Num Scope                Name           Ref            Type
+  0 global               x              _x             int          0
+  1 global               main           _main          () -> void
+  2 global               y              _y             int          0
+Parse Successful

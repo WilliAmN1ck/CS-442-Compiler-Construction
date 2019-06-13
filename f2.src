@@ -1,0 +1,8 @@
+ab, cde : int
+
+main :: {
+  cde = 5
+  for(ab = 0; ab < 20; ab++) {
+    cde = ab + ab
+  }
+}

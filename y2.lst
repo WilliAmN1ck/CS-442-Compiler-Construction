@@ -1,0 +1,41 @@
+In LOAD CHAR AND TEXT IS: '>'
+In LOAD CHAR AND TEXT IS: '>'
+In LOAD CHAR AND TEXT IS: 'r'
+In LOAD CHAR AND TEXT IS: '='
+In LOAD CHAR AND TEXT IS: '\n'
+In LOAD CHAR AND TEXT IS: 'r'
+In LOAD CHAR AND TEXT IS: '='
+In LOAD CHAR AND TEXT IS: '\n'
+In LOAD CHAR AND TEXT IS: 'r'
+In LOAD CHAR AND TEXT IS: '='
+In LOAD CHAR AND TEXT IS: '\n'
+In LOAD CHAR AND TEXT IS: 'r'
+In LOAD CHAR AND TEXT IS: '='
+In LOAD CHAR AND TEXT IS: '\n'
+In LOAD CHAR AND TEXT IS: ' '
+In LOAD CHAR AND TEXT IS: '\n'
+     1: x, y, r :: 0
+[0m[0m     2: 
+[0m[0m     3: main :: {
+[0m[0m     4:   put('>')
+[0m[0m     5:   x = get(int)
+[0m[0m     6:   put('>')
+[0m[0m     7:   y = get(int)
+[0m[0m     8:   r = y + (x * x)
+[0m[0m     9:   put('r') put('=') put(r) put('\n')
+[0m[0m    10:   r = (y + x) * x
+[0m[0m    11:   put('r') put('=') put(r) put('\n')
+[0m[0m    12:   r = y + x * x
+[0m[0m    13:   put('r') put('=') put(r) put('\n')
+[0m[0m    14:   r = x * x + y
+[0m[0m    15:   put('r') put('=') put(r) put('\n')
+[0m[0m    16:   put(true) put(' ') put(false) put('\n')
+[0m[0m    17: }
+[0m[0m
+Symbol Table: global
+Num Scope                Name           Ref            Type
+  0 global               r              _r             int          0
+  1 global               x              _x             int          0
+  2 global               main           _main          () -> void
+  3 global               y              _y             int          0
+Parse Successful

@@ -1,0 +1,129 @@
+---------
+intSum = 117
+floatSum = 4.777000
+
+Contents of Symbol Table
+                    name  strt  stop   cnt 
+  0                 NULL   391   395     1
+  1               aCount   167   173     3
+  2                aSize   198   203     3
+  3                 arg1   446   450     1
+  4                 arg2   451   455     1
+  5                 argc   127   131     2
+  6                 argv   140   144     2
+  7                 char   133   137     2
+  8                 else   403   407     1
+  9                 exit   465   469     2
+ 10                float   192   197     1
+ 11              fprintf   414   421     1
+ 12                   if   345   347     1
+ 13                  int   114   117     3
+ 14                  lst   385   388     1
+ 15                 main   118   122     1
+ 16                    n   456   457     1
+ 17                 name   155   159     1
+ 18             progname   437   445     1
+ 19                  src   366   369     1
+ 20               stderr   422   428     1
+ 21                usage   430   435     1
+     1: #[91m[91mi[91mn[91mc[91ml[91mu[91md[91me[91m[0m <[92mstdio[0m.[93mh[0m>
+[91m	** [0mToken#=3, Length=7, Text="include"         -- No SymbolTable
+[92m	** [0mToken#=3, Length=5, Text="stdio"           -- No SymbolTable
+[93m	** [0mToken#=3, Length=1, Text="h"               -- No SymbolTable
+[0m     2: #[94minclude[0m <[95mstring[0m.[96mh[0m>
+[94m	** [0mToken#=3, Length=7, Text="include"         -- No SymbolTable
+[95m	** [0mToken#=3, Length=6, Text="string"          -- No SymbolTable
+[96m	** [0mToken#=3, Length=1, Text="h"               -- No SymbolTable
+[0m     3: #[91minclude[0m <[92mctype[0m.[93mh[0m>
+[91m	** [0mToken#=3, Length=7, Text="include"         -- No SymbolTable
+[92m	** [0mToken#=3, Length=5, Text="ctype"           -- No SymbolTable
+[93m	** [0mToken#=3, Length=1, Text="h"               -- No SymbolTable
+[0m     4: [94m@INIT[0m
+[94m	** [0mToken#=1, Length=5, Text="@INIT"           
+[0m     5: /* Something that should not be in the table.
+[0m     6: */
+[0m     7: 
+[0m     8: [95mint[0m
+[95m	** [0mToken#=3, Length=3, Text="int"             -- new ident
+[0m     9: [96mmain[0m([91mint[0m [92margc[0m, [93mchar[0m **[94margv[0m) { [95mchar[0m * [96mname[0m;
+[96m	** [0mToken#=3, Length=4, Text="main"            -- new ident
+[91m	** [0mToken#=3, Length=3, Text="int"             -- occurrence 2
+[92m	** [0mToken#=3, Length=4, Text="argc"            -- new ident
+[93m	** [0mToken#=3, Length=4, Text="char"            -- new ident
+[94m	** [0mToken#=3, Length=4, Text="argv"            -- new ident
+[95m	** [0mToken#=3, Length=4, Text="char"            -- occurrence 2
+[96m	** [0mToken#=3, Length=4, Text="name"            -- new ident
+[0m    10:   [91mint[0m [92maCount[0m; //char * name;
+[91m	** [0mToken#=3, Length=3, Text="int"             -- occurrence 3
+[92m	** [0mToken#=3, Length=6, Text="aCount"          -- new ident
+[0m    11:   [93mfloat[0m [94maSize[0m;
+[93m	** [0mToken#=3, Length=5, Text="float"           -- new ident
+[94m	** [0mToken#=3, Length=5, Text="aSize"           -- new ident
+[0m    12: 
+[0m    13:   /*
+[0m    14:   /* more that should not be in the table */
+[0m    15:   something = anything;
+[0m    16:   if (something) {
+[0m    17:     doNothing;
+[0m    18:     nothing = -45;
+[0m    19:   }
+[0m    20:   */
+[0m    21: 
+[0m    22:   [95mif[0m ([96margc[0m[91m [0m[92m=[0m= [93m2[0m) {
+[95m	** [0mToken#=3, Length=2, Text="if"              -- new ident
+[96m	** [0mToken#=3, Length=4, Text="argc"            -- occurrence 2
+[91m	** [0mToken#=6, Length=1, Text="="               
+[92m	** [0mToken#=6, Length=1, Text="="               
+[93m	** [0mToken#=4, Length=1, Text="2"               
+[0m    23:     [94msrc[0m[95m [0m= [96margv[0m[[91m1[0m];
+[94m	** [0mToken#=3, Length=3, Text="src"             -- new ident
+[95m	** [0mToken#=6, Length=1, Text="="               
+[96m	** [0mToken#=3, Length=4, Text="argv"            -- occurrence 2
+[91m	** [0mToken#=4, Length=1, Text="1"               
+[0m    24:     [92mlst[0m[93m [0m= [94mNULL[0m;
+[92m	** [0mToken#=3, Length=3, Text="lst"             -- new ident
+[93m	** [0mToken#=6, Length=1, Text="="               
+[94m	** [0mToken#=3, Length=4, Text="NULL"            -- new ident
+[0m    25:   }
+[0m    26:   [95melse[0m {
+[95m	** [0mToken#=3, Length=4, Text="else"            -- new ident
+[0m    27:     [96mfprintf[0m([91mstderr[0m,"[92musage[0m: [93mprogname[0m [94marg1[0m [95marg2[0m\[96mn[0m");
+[96m	** [0mToken#=3, Length=7, Text="fprintf"         -- new ident
+[91m	** [0mToken#=3, Length=6, Text="stderr"          -- new ident
+[92m	** [0mToken#=3, Length=5, Text="usage"           -- new ident
+[93m	** [0mToken#=3, Length=8, Text="progname"        -- new ident
+[94m	** [0mToken#=3, Length=4, Text="arg1"            -- new ident
+[95m	** [0mToken#=3, Length=4, Text="arg2"            -- new ident
+[96m	** [0mToken#=3, Length=1, Text="n"               -- new ident
+[0m    28:     [91mexit[0m([92m1[0m); // Neither should this.
+[91m	** [0mToken#=3, Length=4, Text="exit"            -- new ident
+[92m	** [0mToken#=4, Length=1, Text="1"               
+[0m    29:   }
+[0m    30: 
+[0m    31:   [93maCount[0m[94m [0m= [95m432[0m * [96m78[0m - [91m3[0m;
+[93m	** [0mToken#=3, Length=6, Text="aCount"          -- occurrence 2
+[94m	** [0mToken#=6, Length=1, Text="="               
+[95m	** [0mToken#=4, Length=3, Text="432"             
+[96m	** [0mToken#=4, Length=2, Text="78"              
+[91m	** [0mToken#=4, Length=1, Text="3"               
+[0m    32:   [92maSize[0m[93m [0m= [94m4.56[0m - [95m2.34[0m;
+[92m	** [0mToken#=3, Length=5, Text="aSize"           -- occurrence 2
+[93m	** [0mToken#=6, Length=1, Text="="               
+[94m	** [0mToken#=5, Length=4, Text="4.56"            
+[95m	** [0mToken#=5, Length=4, Text="2.34"            
+[0m    33:   [96maCount[0m[91m [0m= [92m-400[0m;
+[96m	** [0mToken#=3, Length=6, Text="aCount"          -- occurrence 3
+[91m	** [0mToken#=6, Length=1, Text="="               
+[92m	** [0mToken#=4, Length=4, Text="-400"            
+[0m    34:   [93maSize[0m[94m [0m= [95m-2.123[0m;
+[93m	** [0mToken#=3, Length=5, Text="aSize"           -- occurrence 3
+[94m	** [0mToken#=6, Length=1, Text="="               
+[95m	** [0mToken#=5, Length=6, Text="-2.123"          
+[0m    35: 
+[0m    36:   [96mexit[0m([91m0[0m);
+[96m	** [0mToken#=3, Length=4, Text="exit"            -- occurrence 2
+[91m	** [0mToken#=4, Length=1, Text="0"               
+[0m    37: }
+[0m    38: [92m@DUMP[0m
+[92m	** [0mToken#=2, Length=5, Text="@DUMP"           
+[93m	** [0mEOF

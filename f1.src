@@ -1,0 +1,7 @@
+ab, cde :: 1
+
+main :: {
+  ab++
+  cde++
+  ab--
+}

@@ -1,0 +1,28 @@
+     1: ab, cde :: 1
+[0m     2: fgh, ij :: ' '
+[0m     3: klmn :: true
+[0m     4: x, xy, xyz : int
+[0m     5: abc, abcd : chr
+[0m     6: bcd : bool
+[0m     7: 
+[0m     8: //main : () -> void
+[0m     9: 
+[0m    10: main :: {
+[0m    11: 
+[0m    12: }
+[0m
+Symbol Table: global
+Num Scope                Name           Ref            Type
+  0 global               cde            _cde           int          1
+  1 global               fgh            _fgh           chr         32
+  2 global               ij             _ij            chr         32
+  3 global               x              _x             int          0
+  4 global               main           _main          () -> void
+  5 global               klmn           _klmn          bool         1
+  6 global               xy             _xy            int          0
+  7 global               xyz            _xyz           int          0
+  8 global               abcd           _abcd          chr          0
+  9 global               abc            _abc           chr          0
+ 10 global               ab             _ab            int          1
+ 11 global               bcd            _bcd           bool         0
+Parse Successful
